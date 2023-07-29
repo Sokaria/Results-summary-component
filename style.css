@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+section{
+    width: 600px;
+    height: 60vh;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 15px 0 50px 1px rgba(0, 0, 0, 0.192);
+    border-radius: 25px;
+    overflow: hidden;
+}
+section .row{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    height: 100%;
+}
+section .row .item:first-child{
+    padding: 2rem 3rem;
+    text-align: center;
+    border-radius: 25px;
+    background-color:hsla(256, 72%, 46%, 1);
+}
+section .row .item:first-child p:first-child{
+    font-weight: 700;
+    font-size: 18px;
+    color:  hsl(241, 100%, 89%);
+    margin-bottom: 2rem;
+}
+section .row .item:first-child .circle{
+    background-image: linear-gradient(  rgba(0, 0, 0, 0.50) -210px ,hsla(256, 72%, 46%, 1));
+    width: 140px;
+    height:140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+section .row .item:first-child .circle h2{
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+}
+section .row .item:first-child .circle p{
+    font-weight: 400;
+    font-size: 13px;
+    color:  hsl(241, 100%, 89%);
+}
+section .row .item:first-child .text h3{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+section .row .item:first-child .text p{
+    font-weight: 400;
+    font-size: 15px;
+    color:  hsl(241, 100%, 89%);
+}
+section .row .item:last-child{
+    padding:1.5rem 2rem;
+}
+section .row .item:last-child .Summary{
+    color: hsl(224, 30%, 27%);
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+section .row .item:last-child .row{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 60%;
+    margin-bottom: 1rem;
+}
+section .row .item:last-child .section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding:1.4rem 1rem;
+    height: 0px;
+    margin-bottom: .5rem;
+}
+
+section .row .item:last-child .section div:first-child{
+    display: flex;
+    gap: 10px;
+}
+section .row .item:last-child .section div:first-child h4,section .row .item:last-child .section div:last-child p{
+    font-size: 15px;
+    font-weight: 700;
+}
+section .row .item:last-child .section div:last-child p{
+    word-spacing: 3px;
+    color:rgb(19, 19, 19) ;
+}
+section .row .item:last-child .section div:last-child p span{
+    color:rgb(197, 197, 197) ;
+}
+section .row .item:last-child button{
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color:hsl(224, 30%, 27%);
+    color: rgb(235, 235, 235);
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    height: 45px;
+}
+.Reaction{
+    background-color:hsla(0, 100%, 67%, 0.068) ;
+}
+.Reaction h4{
+    color: hsl(0, 100%, 67%);
+}
+.Memory{
+    background-color: hsla(39, 100%, 56%, 0.078) ;
+}
+.Memory h4{
+    color:hsl(39, 100%, 56%);
+}
+.Verbal{
+    background-color: hsla(166, 100%, 37%, 0.078) ;
+}
+.Verbal h4{
+    color:hsl(166, 100%, 37%);
+}
+.Visual{
+    background-color: hsla(234, 85%, 45%, 0.078) ;
+    margin-bottom: 1rem;
+}
+.Visual h4{
+    color:hsl(234, 85%, 45%);
+}
+@media (max-width:375px){
+    body{
+        display: flex;
+        align-items: flex-start;
+        height: 110vh;
+        width: 100%;
+    }
+    section {
+        height: 110vh;
+        border-radius: 0;
+    }
+    section .row{
+        grid-template-columns: 1fr;
+    }
+    section .row .item:first-child{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding: 1rem 4rem;
+    }
+    section .row .item:first-child p:first-child{
+        font-size: 15px;
+        margin-bottom: 1rem;
+    }
+    section .row .item:first-child .circle{
+        width: 140px;
+        height:140px;
+        margin-bottom: 1rem;
+    }
+    section .row .item:first-child .circle h2{
+        font-size: 45px;
+    }
+    section .row .item:first-child .text h3{
+        font-size: 24px;
+    }
+    section .row .item:first-child .text p{
+        font-size: 14px;
+    }
+    section .row .item:last-child{
+        padding:.5rem 1rem;
+    }
+    section .row .item:last-child .Summary{
+        color: hsl(224, 30%, 27%);
+        font-size: 20px;
+        font-weight: 800;
+        margin-bottom: 1rem;
+    }
+    section .row .item:last-child .section{
+        margin-bottom: 1rem;
+    }
+    section .row .item:last-child button{
+        height: 50px; 
+    }
+    section .row .item:last-child .row{
+        margin-bottom: 1rem;
+    }
+
+}
